@@ -72,5 +72,19 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+
     }
+
+    public void UpdateDataUI()
+    {
+        if(m_Points > DataManager.Instance.bestScore)
+        {
+            //DataManager.Instance.SaveUserRecord();
+        }
+
+
+    }
+
+    
+
 }
